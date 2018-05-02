@@ -10,7 +10,7 @@ You can add the plugin to caddy source manually or using [caddyman](https://gith
 ##### 1 - Manual Installation
 * Get plugin files:
 ```bash
-go get github.com/arahmanhamdy/wsproxy
+go get github.com/incubaid/wsproxy
 ```
 * Import plugin into caddy `run.go` file: `$GOPATH/src/github.com/mholt/caddy/caddy/caddymain/run.go`
 ```go
@@ -20,7 +20,7 @@ import (
 	
 	// This is where other plugins get plugged in (imported)
 	// ......
-	_ "github.com/arahmanhamdy/wsproxy"
+	_ "github.com/incubaid/wsproxy"
 )
 ```
 * Register `wsproxy` directive by adding it into `plugin.go` file: `$GOPATH/src/github.com/mholt/caddy/caddyhttp/httpserver/plugin.go`
